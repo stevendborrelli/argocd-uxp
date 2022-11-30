@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: simple-bucket
+  name: configuration-platform-ref-aws
   namespace: argocd
 spec:
   destination:
     server: https://kubernetes.default.svc
   project: crossplane-demo
   source:
-    path: examples/SimpleS3Bucket
+    path: uxp-config
     repoURL: https://github.com/stevendborrelli/argocd-uxp
     targetRevision: HEAD
