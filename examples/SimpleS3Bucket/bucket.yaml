@@ -1,0 +1,13 @@
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: borrelli-test-bucket
+  labels:
+    testing.upbound.io/example-name: s3
+spec:
+  forProvider:
+    region: us-west-1
+    tags:
+      Name: SampleBucket
+      Owner: borelli
+
